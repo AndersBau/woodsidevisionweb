@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+.grid-parent{
+    display: grid;
+    grid-template: 15vh 80vh 60vh 50vh 35vh 40vh / repeat(12, 1fr);      
+    grid-template-areas:     
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "banner banner banner banner banner banner banner banner banner banner banner banner"
+    "sunglasses sunglasses sunglasses sunglasses sunglasses sunglasses contacts contacts contacts contacts contacts contacts"
+    "eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare"
+    "description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv"
+    "insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
+
+.banner {
+    grid-area: banner;
+    background: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text {
+    width: 40vw;
+    text-align: left;
+}
+.hero-text-title {
+  font-size: 3rem;
+  color: rgb(66, 66, 66);
+}
+.hero-text-title span {
+  font-size: 6rem;
+  color: #2fc4b2;
+  line-height: 4.5rem;
+}
+.hero-image {
+    height: 100%;
+    width: 42vw;
+    object-fit: cover;
+    background: url(../img/home-main-img.png);    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sunglasses, .contacts, .eyecare {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.sunglasses {
+    grid-area: sunglasses;       
+    border: 2px solid rgb(245, 245, 245);
+}
+
+.sunglasses-img {
+    width: 95%;
+}
+
+.images {
+  width: 100%;
+}
+.contacts {
+    grid-area: contacts;
+    border: 2px solid rgb(245, 245, 245);
+}
+.contacts-img {
+    width: 95%;
+}
+.eyecare {
+    grid-area: eyecare;
+}
+.eyecare .titles {
+    top: 50%;
+}
+.eyecare-img {
+    width: 60%;
+}
+.titles {
+    position:absolute;
+    top:50%;
+    background: rgba(24, 24, 24, 0.7);
+    width: 95%;
+    height: 40px;
+    color: rgb(235, 235, 235);
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.eyecare .titles {
+    top: 45%;
+    width: 60%;
+}
+.intro {
+    width: 50%;
+    padding-top: 30px ;
+    font-size: 1.5rem;
+}
+.intro a {
+    font-size: 1.6rem;
+    color: #2fc4b2;
+}
+
+.description-serv {
+    grid-area: description-serv;
+}
+.description-serv-text {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+.description-serv-text span {
+    color: #2fc4b2;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.description-serv a {
+    font-size: 1.3rem;
+    color: #2fc4b2;
+}
+.insurance {
+    grid-area: insurance;
+}
+.glassesimg {
+    margin: 0 auto;
+    width: 85px;
+    height: 35px;
+    background: url(../img/logo-glassesdesktop.png);
+    z-index: 50;
+}
+.insurance-text {
+    margin: 0 auto;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.insurance-text h3 {
+    font-size: 2.5rem;
+}
+.insurance a {
+    color: #2fc4b2;
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid-parent{
+        display: grid;
+        grid-template: 15vh 80vh 80vh 70vh 35vh 35vh / repeat(12, 1fr);      
+        grid-template-areas:     
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "banner banner banner banner banner banner banner banner banner banner banner banner"
+        "sunglasses sunglasses sunglasses sunglasses sunglasses sunglasses contacts contacts contacts contacts contacts contacts"
+        "eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare eyecare"
+        "description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv description-serv"
+        "insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance insurance"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+    .hero-text {
+        width: 40vw;
+        text-align: left;
+    }
+    .hero-text-title {
+      font-size: 3.8rem;
+    }
+    .hero-text-title span {
+      font-size: 6.8rem;
+    }
+    .hero-image {
+        height: 100%;
+        width: 42vw;
+        background: url(../img/home-main-img-lx.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .titles {
+        top:60%;
+    }
+    .eyecare .titles {
+        top: 50%;
+        width: 60%;
+    }    
+    .intro {
+        width: 50%;
+        padding-top: 30px ;
+        font-size: 2rem;
+    }
+    .intro a {
+        font-size: 1.6rem;
+    }
+    .description-serv a {
+        font-size: 1.6rem;
+    }    
+    .insurance-text a {
+        font-size: 1.6rem;        
+    }
+    
+
+}
+@media only screen and (max-width: 800px) and (min-width:600px) {
+    .grid-parent{
+        display: grid;
+        grid-template: 25vh 65vh 60vh 60vh 40vh 35vh 25vh 20vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+    .hero-text {
+        width: 40vw;
+        text-align: left;
+        position: absolute;
+        top:30%;
+        left: 2rem;
+        padding: 2rem;
+    }
+    .hero-text-title {
+      font-size: 3.5rem;
+      line-height: 6rem;
+    }
+    .hero-text-title span {
+      font-size: 6rem;
+      line-height: 3rem;
+    }
+    .hero-image {
+        height: 100%;
+        position: absolute;
+        right: .5rem;
+        width: 55vw;
+        background: url(../img/home-main-img.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .eyecare-img {
+        width: 90%;
+    }
+    .titles {
+        top: 60%;
+    }
+    .eyecare .titles {
+        top: 50%;
+        width: 90%;
+    } 
+    .intro a {
+    font-size: 1.3rem;
+}
+ .description-serv-text {
+     font-size: 1.75rem;
+     width: 70%;
+     padding-top: 1rem;
+ }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-parent{
+        display: grid;
+        grid-template: 30vh 65vh 55vh 55vh 45vh 55vh 35vh 40vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+    .hero-text {
+        position: absolute;
+        top:30%;
+        left: 1rem;
+        padding: 2rem;
+        width: 50%;        
+        /* background: rgba(2, 2, 2, 0.6);         */
+    }
+    .hero-text-title {
+      font-size: 2.5rem;
+      line-height: 4rem;
+      font-weight: 500;
+    }
+    .hero-text-title span {
+      font-size: 4rem;
+      line-height: .5rem;
+      font-weight: 600;
+    }
+    .hero-image {
+        height: 100%;
+        width: 100%;
+        background: url(../img/home-main-img-xs.png); 
+        background-position: right;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .eyecare-img {
+        width: 90%;
+    }
+    .titles {
+        top:40%;
+        font-size:1.5rem;
+    }
+    .eyecare .titles {
+        top: 39%;
+        width: 90%;
+    }
+    .eyecare .intro {
+        padding-top: 60px;
+    }
+    .description-serv-text {
+        padding-top: 0;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 414px) {     
+    .grid-parent{
+        display: grid;
+        grid-template: 30vh 65vh 60vh 55vh 45vh 55vh 35vh 40vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+ 
+}
+@media only screen and (max-width: 376px) {     
+    .grid-parent{
+        display: grid;
+        grid-template: 33vh 65vh 60vh 60vh 50vh 65vh 40vh 45vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+    .hero-text, .hero-image {
+        margin-top: 3rem;
+      }
+      .titles {
+        top:35%;
+        font-size:1.5rem;
+    }
+    .eyecare .titles {
+        top: 34%;
+        width: 90%;
+    }
+ 
+}
+@media only screen and (max-width: 360px) {     
+    .grid-parent{
+        display: grid;
+        grid-template: 33vh 65vh 65vh 65vh 55vh 75vh 45vh 45vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+ 
+}
+@media only screen and (max-width: 320px) {     
+    .grid-parent{
+        display: grid;
+        grid-template: 40vh 60vh 70vh 70vh 65vh 90vh 60vh 55vh / 1fr;      
+        grid-template-areas:     
+        "nav"
+        "banner"
+        "sunglasses"
+        "contacts"
+        "eyecare"
+        "description-serv"
+        "insurance"
+        "footer "
+        ;
+    }
+    .hero-image {
+        margin-top: 0;
+    }
+    .hero-text-title {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    .hero-text-title span {
+        font-size: 3rem;
+    }
+    .hero-text {
+        margin-top: 6rem;
+      }
+    .titles {
+        top:35%;
+        font-size:1.5rem;
+    }
+    .eyecare .titles {
+        top: 34%;
+        width: 90%;
+    }
+ 
+}

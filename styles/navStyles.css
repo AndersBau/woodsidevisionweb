@@ -1,0 +1,155 @@
+nav {
+  grid-area: nav;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 15vh;
+    background: rgb(224, 224, 224);
+    color: rgb(49, 48, 48);
+    text-transform: uppercase;
+  }
+  .header__logo-box {
+  }
+  
+  .header__logo {
+    height: 6.5rem; 
+  }
+  
+  .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 5rem;
+  }
+  a{
+    color: rgb(49, 48, 48);
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 1024px) {        
+    .header__logo {
+      height: 6.5rem; 
+      left: 5rem;
+    }    
+    .nav-links {
+      justify-content:space-around;
+      width: 60%;
+      font-size: 1.3rem;
+    }
+ 
+  }
+  @media only screen and (max-width: 800px) { 
+    nav {
+      min-height: 20vh;
+    }
+    .header__logo-box {
+      position: absolute;
+      top: 3rem;      
+    }
+    .header__logo {
+      height: 7.5rem; 
+    }  
+    .nav-links {
+      font-size: 2rem;
+      justify-content:space-around;
+      width: 100%;
+      font-size: 1.8rem;    
+      margin-left: 8rem; 
+    
+    } 
+    
+    .btn-appointments {
+      background-color: #2fc4b2;
+      position: absolute;
+      top: 19rem;
+      left: 19rem;
+      color: #fff;
+      border-radius: .5rem;
+      height: 1.9em;
+      font-size: 2rem;
+      width: 20%;
+      padding: 1rem 1.5rem 0 1.5rem;
+  }
+  .btn-call {
+    background-color: #2fc4b2;
+    position: absolute;
+    top: 19rem;
+    right: 19rem;
+    color: #fff;
+    border-radius: .5rem;
+    height: 1.9em;
+    font-size: 2rem;
+    width: 20%;
+    padding: 1rem 1.5rem 0 1.5rem;
+  }
+  }
+  @media only screen and (max-width: 600px) {  
+    .nav-links{
+      margin-top: 5rem;   
+      margin-left: 1.1rem;   
+      font-size: 1.4rem;
+    }   
+    .home-link {
+      display: none;
+    }
+    .btn-appointments {
+      top: 18rem;
+      left: 2rem;
+      border-radius: .5rem;
+      height: 1.9em;
+      font-size: 1.7rem;
+      width: 35%;
+      padding: 1rem 1.5rem 0 1.5rem;
+    }
+    .btn-call {
+      top: 18rem;
+      right: 2rem;
+      border-radius: .5rem;
+      height: 1.9em;
+      font-size: 1.7rem;
+      width: 35%;
+      padding: 1rem 1.5rem 0 1.5rem;
+    }
+ 
+  }
+  @media only screen and (max-width: 414px) {  
+    .btn-call, .btn-appointments {
+      top:17rem
+    }
+    
+  }
+  @media only screen and (max-width: 376px) {  
+    
+    .nav-links{
+      margin-top: 4.5rem;
+    }
+    .btn-call, .btn-appointments {
+      top:17.7rem
+    }
+    
+  }
+
+  @media only screen and (max-width: 360px) {     
+    .nav-links{
+      margin-top: 5rem;
+    }
+    .btn-call, .btn-appointments {
+      top:15rem
+    }
+ 
+  }
+  @media only screen and (max-width: 320px) { 
+       
+    .nav-links{
+      margin-top: 6rem;
+    }
+    .btn-call, .btn-appointments {
+      top:17rem;
+      width: 33%;
+      font-size: 1.5rem;
+    }
+ 
+  }
